@@ -1,5 +1,5 @@
-from PyQt5.QtWidgets import QGridLayout, QPushButton, QLCDNumber, QWidget, QVBoxLayout, QTextBrowser, QTabWidget
-from utils.projectEulerTab import ProjectEulerTab
+from PyQt5.QtWidgets import QGridLayout, QWidget, QTabWidget
+from .projectEulerTab import ProjectEulerTab
 
 class ProjectEulerApp(QWidget):
     def __init__(self, problems):

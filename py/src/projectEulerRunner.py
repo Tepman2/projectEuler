@@ -1,15 +1,17 @@
 import sys
 from PyQt5.QtWidgets import QApplication
-from app.projectEulerApp import ProjectEulerApp
-from problems.problem01 import Problem01
-from problems.problem02 import Problem02
-from problems.problem03 import Problem03
+from app import ProjectEulerApp
+from problems import (Problem01, Problem02, Problem03, Problem04, Problem05, Problem06)
 
 if __name__ == '__main__':
-    problems = []
-    problems.append(Problem01())
-    problems.append(Problem02())
-    problems.append(Problem03())
+    problem_list = []
+
+    problem_list.append(Problem01())
+    problem_list.append(Problem02())
+    problem_list.append(Problem03())
+    problem_list.append(Problem04())
+    problem_list.append(Problem05())
+    problem_list.append(Problem06())
     app = QApplication(sys.argv)
-    window = ProjectEulerApp(problems)
+    window = ProjectEulerApp(problem_list)
     sys.exit(app.exec_())
