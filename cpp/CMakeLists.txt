@@ -11,7 +11,9 @@ add_subdirectory(src/app)
 add_subdirectory(src/problem01)
 add_subdirectory(src/problem02)
 add_subdirectory(src/problem03)
+add_subdirectory(src/problem04)
+add_subdirectory(src/problem05)
+add_subdirectory(src/problem06)
 
 include(CTest)
 enable_testing()
-
